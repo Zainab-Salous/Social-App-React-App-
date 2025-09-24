@@ -9,6 +9,7 @@ import ProtectedRoutes from "./ProtectedRoutes";
 import ProtectedAuthRoutes from "./ProtectedAuthRoutes";
 import PostDetails from "../pages/PostDetails/PostDetails";
 import Profile from "../pages/auth/Profile/Profile";
+import ChangePassword from "../pages/auth/ChangePassword/ChangePassword";
 
 export const router = createBrowserRouter([
   {
@@ -62,6 +63,14 @@ export const router = createBrowserRouter([
           <ProtectedAuthRoutes>
             <Register />,
           </ProtectedAuthRoutes>
+        ),
+      },
+         {
+        path: "/change-password",
+        element: (
+          <ProtectedRoutes>
+            <ChangePassword />,
+          </ProtectedRoutes>
         ),
       },
       {

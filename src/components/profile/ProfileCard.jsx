@@ -35,7 +35,7 @@ export default function ProfileCard() {
     onSuccess: () => {
       setOpenModal(false)
       toast.success("Profile photo updated successfully", { theme: "dark" });
-      getProfileData(localStorage.getItem("token"))
+      getProfileData(localStorage.getItem("token")) 
 
 
     },
